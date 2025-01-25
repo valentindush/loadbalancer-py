@@ -71,7 +71,7 @@ class LoadBalancerHandler(http.server.BaseHTTPRequestHandler):
             self.send_error(500, f"Error forwarding request: {e}")
 
     def do_GET(self):
-        backend = get_least_connections_server()
+        backend = get_next_server()
         active_connections[backend] += 1
         logging.info(f"Forwarding request to {backend} (connections: {active_connections[backend]})")
         self.forward_request(backend)
