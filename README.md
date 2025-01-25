@@ -31,19 +31,6 @@ To start the load balancer, run:
 python loadbalancer.py
 ```
 
-## Configuration
-
-You can configure the load balancer by editing the `config.json` file. Here is an example configuration:
-```json
-{
-  "servers": [
-     {"host": "127.0.0.1", "port": 8001},
-     {"host": "127.0.0.1", "port": 8002}
-  ],
-  "health_check_interval": 10
-}
-```
-
 ## Contributing
 
 Contributions are welcome! Please fork the repository and submit a pull request.
