@@ -7,7 +7,6 @@ This project is a simple load balancer written in Python. It distributes incomin
 
 - Round-robin load balancing
 - Health checks for backend servers
-- Easy to configure and extend
 
 ## Installation
 
